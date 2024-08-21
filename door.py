@@ -2,11 +2,11 @@ class Door:
     """
     f
     """
-    def __init__(self, ref2door_lock, base_color):
-        self._the_door_lock = ref2door_lock
-        self.color = base_color
-        self._door_is_open = False
-        self._door_is_locked = False
+ def __init__(self, ref2door_lock, base_color):
+  self._the_door_lock = ref2door_lock
+  self.color = base_color
+  self._door_is_open = False
+  self._door_is_locked = False
 
     def open_the_door(self):
         if not self._door_is_locked:
