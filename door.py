@@ -2,6 +2,9 @@ class Door:
     """
     f
     """
+    """
+    f
+    """
     def __init__(self, ref2door_lock, base_color):
         self._the_door_lock = ref2door_lock
         self.color = base_color
