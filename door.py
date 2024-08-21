@@ -9,7 +9,7 @@ class Door:
         self._door_is_locked = False
 
     def open_the_door(self):
-        if self._door_is_locked == False:
+        if not self._door_is_locked:
             self._door_is_open = True
 
     def close_the_door(self):
