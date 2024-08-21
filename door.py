@@ -1,23 +1,15 @@
 class Door:
 
-
-    # Mit dem Keyword def wird eine Funktion bzw. eben ein Konstruktor deklariert.
-    # Der Konstruktor trägt IMMER den Namen __init__ und weist als ersten Parameter den Wert self auf.
-    # Danach folgen die Übergabeparameter, deren Werte dann den Attributen zugewiesen werden.
-    # Attribute können aber auch mit einem fixen Wert initialisiert werden.
-    # Konstruktoren werden als Erstes im Programm angeschrieben.
     def __init__(self, ref2door_lock, base_color):
 
-        # ein privates Attribut muss im Konstruktor initialisiert werden und ist dann in der Klasse
-        # über self._name_des_Attributs ansprechbar.
+
         self._the_door_lock = ref2door_lock
-        # Hier wird der Setter eines Attributs aufgerufen (siehe unten)
+
         self.color = base_color
         self._door_is_open = False
         self._door_is_locked = False
 
-    # Nach den Konstruktoren folgen Methoden, die eine Verarbeitung auslösen.
-    # Danach folgen Methoden, die auf ein Ereignis reagieren
+
     def open_the_door(self):
 
         if self._door_is_locked == False:
@@ -43,8 +35,7 @@ class Door:
               f'Türe offen: {self._door_is_open}'
               f'Türe verriegelt: {self._door_is_locked}')
 
-    # Am Ende folgen die getter- und setter-Methoden für die Attribute der Klasse
-    # getter werden mit der Anotation @property markiert.
+
     @property
     def door_is_open(self):
 
